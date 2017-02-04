@@ -1,0 +1,14 @@
+<html>
+</html>
+<script>
+var array = [5, 18, 56, 565, 5, 45];
+var min = getMinValue(array);
+function getMinValue(array){
+    var min = array[0];
+    for (var i = 0; i < array.length; i++) {
+        if (min > array[i]) min = array[i];
+    }
+console.log(min)
+    return min;
+}
+</script>

@@ -1,20 +1,18 @@
 <html>
-      
       <script>
-   function summ (max) {
-    function rand (max) {
-        return Math.round(Math.random() * (max));   
+ var array = [];           
+var random,sum = 0;          
+while (array.length <= 4) {
+    random = Math.floor(Math.random() * 50); 
+       array.push(random);         
+ }
+document.write("Massiv: ",array);
+for (var i = 0; i<array.length; i++){
+    if (array[i]%2==0){
+        sum += array[i];
     }
-    var mas = [],
-        sum = 0;
-    for (var i = 0; i < max; i++) {
-        mas[i] = rand(max);
-        ((i % 2) == 0) ? sum += mas[i] : '';
-    }
-    console.log('Massiv sanu: ' + mas);
-    console.log('zhup sandar sanu: ' + sum);
 }
-summ(10);
+document.write("<br>kosyndy: ",sum);
 </script>
    
-</html>
+</html
